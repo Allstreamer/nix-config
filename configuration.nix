@@ -79,6 +79,7 @@
      alacritty
      htop
      git
+     gh
      tmux
 
      # Nix Stuff
@@ -91,7 +92,7 @@
      wofi # Launcher
      mako # Notification Daemon
      libnotify # Needed for mako
-     swww # Wallpapers
+     hyprpaper # Wallpapers
      hyprlock # Screen locker
      grim # Screenshots
      slurp # Screenshots but area select
@@ -123,9 +124,6 @@
 
   services.displayManager.ly = {
     enable = true;
-    # settings = {
-    #   background_image = "/home/all/Wallpaper/abstract.jpg";
-    # };
   };
 
 
