@@ -84,4 +84,6 @@
       snvim = "sudo -E nvim";
     };
   };
+
+  home.file.".config/hypr/hyprpaper.conf".source = ./apps/hyprpaper.conf;
 }

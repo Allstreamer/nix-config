@@ -96,7 +96,8 @@
      hyprlock # Screen locker
      grim # Screenshots
      slurp # Screenshots but area select
-     libsForQt5.layer-shell-qt # Required for sddm cursor?
+     sddm-astronaut
+
      wl-clipboard
      networkmanagerapplet # Wifi & Networking controls
      xfce.thunar # File Manager
@@ -122,8 +123,17 @@
 
   # TODO: Desktop Portal
 
-  services.displayManager.ly = {
+  # services.displayManager.ly = {
+  #   enable = true;
+  # };
+
+  services.displayManager.sddm = {
     enable = true;
+    package = pkgs.kdePackages.sddm;
+    extraPackages = [pkgs.sddm-astronaut];
+    theme = "sddm-astronaut-theme";
+
+    wayland.enable = true;
   };
 
 
